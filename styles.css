@@ -1,0 +1,559 @@
+body{
+    margin:0px;
+    width:1440 px;
+    background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) );
+    background-attachment: fixed;
+}
+
+#hero{
+
+    background-image: url("assets/hero.jpg");
+    box-shadow: 0px 4px 66.9px 50px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    
+}
+
+#hero-title{
+    margin:0px;
+    font-family: "Outfit", sans-serif;
+    width: 952px;
+    height: 124px;
+    flex-shrink: 0;
+    font-size:120px ;
+
+    font-weight: 400px;
+    letter-spacing:3.6px ;
+     color: rgba(255, 255, 255, 0.10);
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 3px #FFF;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(1px);
+    backdrop-filter: opacity(50%);
+
+
+
+}
+#NavBar{
+    margin: 0px;
+    width:100% ;
+    height: 55px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%);
+    mix-blend-mode: color-burn;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(2px);
+}
+#logo{
+    width: 190.824px;
+    height: 41.517px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27.5px; /* 68.75% */
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding-top: 6px;
+
+}
+#Menu{
+    position: absolute;
+    top: 0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    margin-right: 10px;
+    margin-top:0px;
+
+
+}
+.menu-class{
+    margin-top:12px;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27.5px; /* 110% */
+}
+
+#second-section{
+    height:1387px ;
+}
+.title{
+    width:fit-content;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left:100px;
+    top:20px;
+    margin-bottom: 0px;
+    /* title1 */
+    font-family: Outfit;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.5px;
+}
+.line{
+    margin-top: 18px;
+    width: 571px;
+    height: 5px;
+    background: #FFF;
+}
+
+.sur2{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#aboutTunisia-img{
+
+width: 420px;
+height: 523px;
+flex-shrink: 0;
+border-radius: 30px;
+/* background: url("assets/about2.jpeg") lightgray 50% / cover no-repeat; */
+background: url("assets/about.jpeg") lightgray 50% / cover no-repeat;
+box-shadow: 0px 4px 96px 0px rgba(0, 0, 0, 0.25);
+margin-top: auto;
+margin-bottom: auto;
+}
+.paragraph{
+    width: 650px;
+    height: 492px;
+    flex-shrink: 0;
+    color: #2B5F9D;
+    margin-left: 0px;
+    /* paragraph */
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+
+}
+.stats{
+    margin-top:120px;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+.stat-box{
+
+    width: 316px;
+    height: 200px;
+    flex-shrink: 0;
+
+
+
+
+}
+.number{
+
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin:10px;
+
+
+}
+.specification{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin:10px;
+
+}
+
+.details{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin:10px;
+    text-shadow: 0px 0px 40px rgba(0, 59, 148, 0.938);
+
+    }
+/* #third-section{
+        height:100% ;
+    }
+
+.upside-img{
+    width:100%;
+    margin-bottom: 0px;
+}
+
+.blur{
+    margin:0px;
+    height: 1000px;
+  
+    background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+filter: blur(125px);
+} 
+
+.title2{
+    position:relative;
+    z-index: 1;
+    color: #112A44;
+text-align: right;
+font-family: Outfit;
+font-size: 70px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 3.5px;
+text-transform: uppercase;
+}
+ */
+
+
+ #third-section {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+ 
+}
+
+
+
+ .blur {
+    position: absolute;
+    top: 390px;
+    bottom: 350px;
+    width: 100%; 
+    left: 0px;
+    right: 0px;
+    
+    z-index: 1;
+    background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+    filter: blur(30px);
+} 
+
+.upside-img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #112A44;
+    font-family: Outfit;
+    text-align: center;
+}
+
+.title2 {
+   
+    margin: 0;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+
+    color: #112A44;
+    text-align: right;
+    font-family: Outfit;
+    
+    font-style: normal;
+    
+    line-height: normal;
+    
+    
+    }
+.line2{
+    position: relative;
+    left: 430px;
+    width: 820px;
+    height: 5px;
+    background: #112A44;
+    margin-right: 0px;
+    
+
+}
+/* .images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.container{
+    
+    max-width: 1200px;
+    width: 84%;
+    margin-bottom: 80px; 
+    margin-right: auto ;
+    margin-left: auto;
+}
+.slider-wrapper {
+    position:relative;
+
+}
+.slider-wrapper .slide-button{
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+}
+.slider-wrapper .slide-button:hover{
+    background: #444;
+}
+
+.slider-wrapper .slide-button#prev-slide{
+    left: -20px;
+    display:none;
+    
+}
+.slider-wrapper .slide-button#next-slide{
+    right: -20px;
+}
+.slider-wrapper .images{
+    display: grid;
+    gap:18px;
+    font-size: 0;
+    margin-bottom: 30px;
+    overflow-x: auto; /*akelli tsawer hiya west lpage*/
+    scrollbar-width: none;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.slider-wrapper .images::-webkit-scrollbar{
+    display:none; 
+
+}
+.slider-wrapper .images .image-item{
+    width:325px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    
+}
+.slider-scrollbar .scrollbar-track{
+    height:2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+
+}
+.slider-scrollbar:hover .scrollbar-track{
+    height: 4px;
+
+}
+
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height:100%;
+    width: 50%;
+    background: #000;
+    border-radius: inherit;
+    cursor:grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height:8px;
+    top: -2px;
+
+
+
+
+}
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+
+
+}
+
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .images {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .images .image-item {
+      width: 280px;
+      height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+
+  .heritage-p{
+    width: 1241px;
+height: 220px;
+flex-shrink: 0;
+color: #1F447E;
+text-align: center;
+
+
+font-family: Outfit;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.5px;
+  }
+  #unesco-link{
+    color:#2f5799;
+   
+
+  }
+ #seasons-section{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+ }
+ .line3{
+
+   margin-top: 25px;
+    width: 940px;
+    height: 5px;
+    background: #FFF;
+    
+
+}
+  .seasons{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 50px 20px;
+    width: 1320px;
+    height: 436px;
+    flex-shrink: 0;
+  }
+.season-item{
+    width: 290px;
+    height: 360px;
+    flex-shrink: 0;
+    border-radius: 34px;
+    margin: 5px 17px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    transition: transform 0.3s ease-in-out;
+
+}
+
+ .season-item:hover{
+    
+    transform: scale(1.2);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);
+
+}
+    
+#winter{ 
+    background: url("assets/winter.jpg") lightgray 50% / cover no-repeat;
+  
+  
+}
+
+#spring{
+    background: url("assets/spring.jpg") lightgray 50% / cover no-repeat;
+}
+#summer{
+    background: url("assets/summer.jpg") lightgray 50% / cover no-repeat;
+
+}
+#autumn{
+    background: url("assets/autumn.jpeg") lightgray 50% / cover no-repeat;
+}
+.season-word{
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px black;
+    margin-bottom: 20px;
+
+}
+
+#winter-section{
+    width: vw;
+    height: 963px;
+    flex-shrink: 0;
+    background: url("assets/snow4.png") ;
+    mix-blend-mode:overlay;  
+    box-shadow: 0 0 80px 38px #c1d0e200 inset;
+
+
+
+} 
+
+.season-title{
+
+}
