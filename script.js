@@ -20,7 +20,7 @@ const initSlider =() => {
 
             const scrollPosition=(boundedPosition/maxThumbPosition)* maxScrollLeft ;
             scrollbarThumb.style.left=`${boundedPosition}px`;
-            images.scrollLeft=scrollPosition;
+            images.scrollLeft=scrollPosition; 
         }
 
         const handleMouseUp =() =>{
@@ -62,3 +62,15 @@ const initSlider =() => {
 
 
 window.addEventListener("load",initSlider);
+
+
+function showSidebar(){
+    //to select a css element
+    const sidebar =docuùment.querySelector(".sidebar");
+    sidebar.style.display="flex";
+
+}
+function hideSidebar(){
+    const sidebar =document.querySelector(".sidebar");
+    sidebar.style.display="none";
+}

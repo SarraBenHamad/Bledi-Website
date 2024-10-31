@@ -1,6 +1,6 @@
 body{
     margin:0px;
-    /* width:1440 px;  */
+    width:1440 px; 
     width: 100%; 
     background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
    
@@ -8,7 +8,7 @@ body{
 }
 .body-beach{
     margin:0px;
-    width:100% ;
+    width:1440 px;
     background:whitesmoke; 
    
     background-attachment: fixed;
@@ -31,15 +31,15 @@ body{
 }
 
 #hero-title{
-    margin:0;
+    margin:0px;
     font-family: "Outfit", sans-serif;
-    max-width: 90%;
-    /* height: 124px; */
+    width: 952px;
+    height: 124px;
     flex-shrink: 0;
-    font-size:8vw;
+    font-size:120px ;
 
-    font-weight: 400;
-    letter-spacing:0.3em ;
+    font-weight: 400px;
+    letter-spacing:3.6px ;
      color: rgba(255, 255, 255, 0.10);
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke: 3px #FFF;
@@ -54,7 +54,7 @@ body{
 #NavBar{
     margin: 0px;
     width:100% ;
-    /* height: 55px; */
+    height: 55px;
     flex-shrink: 0;
     /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
     mix-blend-mode: color-burn;*/
@@ -72,15 +72,15 @@ body{
 }
 #logo{
     position: fixed;
-    width: 100%;
-    /* height: 41.517px; */
+    width: 190.824px;
+    height: 41.517px;
     flex-shrink: 0;
     color: #FFF;
     font-family: Outfit;
-    font-size: 2.6vw;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height:  68.75% ;
+    line-height: 27.5px; /* 68.75% */
     text-transform: uppercase;
     /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); */
 
@@ -109,18 +109,17 @@ a {
     margin-left: 10px;
     margin-top:0px;
     z-index: 4;
-    /* width: 450px; */
-    width:100%;
+    width: 450px;
 
 }
 .menu-class{
     margin-top:12px;
     color: #FFF;
     font-family: Outfit;
-    font-size: 1rem;
+    font-size: 17px;
     font-style: normal;
     font-weight: 300;
-    line-height:110% ;
+    line-height: 27.5px; /* 110% */
     text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.479);
 }
 .menu-class:hover{
@@ -129,8 +128,7 @@ a {
 }
 
 #second-section{
-    /* height:1387px ; */
-    padding:2rem;
+    height:1387px ;
 }
 
 .title{
@@ -143,62 +141,19 @@ a {
     margin-bottom: 0px;
     /* title1 */
     font-family: Outfit;
-    font-size: 4rem;
+    font-size: 70px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 0.2em;
+    letter-spacing: 3.5px;
 }
 .line{
     margin-top: 18px;
-    /* width: 571px; */
-    width:100%;
+    width: 571px;
     height: 5px;
     background: #FFF;
 }
-@media (max-width: 768px) {
-    .title {
-        font-size: 2rem;
-        text-align: center;
-    }
 
-    .line {
-        max-width: 100%;
-    }
-
-    #hero-title {
-        font-size: 10vw;
-    }
-
-    .menu-class {
-        font-size: 0.8rem;
-    }
-}
-
-/* Responsive styles for image grid */
-.slider-wrapper .images {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    overflow-x: auto;
-}
-
-/* Adjust scrollbar thumb size for smaller screens */
-@media only screen and (max-width: 1023px) {
-    .slider-wrapper .slide-button {
-        display: none !important;
-    }
-
-    .slider-wrapper .images .image-item {
-        width: 280px;
-        height: 380px;
-    }
-
-    .slider-scrollbar .scrollbar-thumb {
-        width: 20%;
-    }
-}
-/*stop here*/
 .sur2{
     display: flex;
     /* justify-content: space-evenly; */
@@ -901,19 +856,7 @@ letter-spacing: 1.5px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    height: auto;
 }
-/* @media only screen and (min-width: 1000px) {
-    #articles-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
-} */
 .title3{
     margin: 5px 225px 0px;
     font-size: 70px;
@@ -940,103 +883,11 @@ letter-spacing: 1.5px;
     display: flex;
     align-items: center;
     height: fit-content;
-    width: 100%;
+    width: 1200px;
     margin: 70px auto 50px auto;
     justify-content: center;
 }
-/*
-.article-btn{
-    display: none;
-    cursor: pointer;
-    position: relative; 
-    transition: 0.5s;
 
-    border-radius: 20px;
-    padding:10px 20px;
-    color:#112A44 ;
-    background-color: rgba(255, 255, 255, 0) ;
-    font-family: Outfit;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.75px;
-    text-transform: uppercase;
-    border:2px solid #112A44;
-    text-align: center;
-    width: fit-content;
-    margin:10px 0px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-    opacity: 0; 
-
-    
-  }
-  
-  .article-btn:after {
-    content: '\f101';
-    font-family: 'FontAwesome';
-    position: absolute;
-    opacity: 0;
-    right: -30px;
-    top: 50%; 
-    transform: translateY(-50%); 
-    transition: 0.5s;
-    font-weight: 400; 
-    font-size: 16px; 
-    color: white;
-
-  }
-  .article-btn:hover {
-    padding-right: 30px;
-    padding-left: 15px;
-    background-color: #112A44;
-    color: white;
-
-
-  }
-  .article-btn:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
-
-.article{
-    height: 420px;
-    width: 340px;
-    border-radius: 50px;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    background-size: cover;
-    background-position: center; 
-
-}
-.article::before {
-    border-radius: 35px;
-
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    transition: 0.3s ease-in-out;
-}
-
-.article:hover::before {
-    filter: blur(2px);
-}
-
-.article:hover .article-btn{
-    display: flex;
-    opacity: 1;    
-    transform: scale(1.005);
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);
-}  
-*/
 .article-btn {
     cursor: pointer;
     position: relative;
@@ -1166,14 +1017,13 @@ letter-spacing: 1.5px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.5px;
-    width: auto;
 }
 
 .article-elements{
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: auto;
+    width: 400px;
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;

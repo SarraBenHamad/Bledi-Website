@@ -1,0 +1,2440 @@
+body{
+    margin:0;
+    width: 100vw; 
+    background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
+    background-attachment: fixed;
+    /* overflow:hidden; */
+    height: auto;
+}
+
+.body-beach{
+    margin:0;
+    width:100%;
+    background:whitesmoke; 
+    background-attachment: fixed;
+}
+/* 
+
+/* Ensure #hero covers the full viewport height */
+#hero {
+    background-image: url("assets/hero.jpg");
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    min-height: 100vh; /* Cover full viewport height */
+    width: 100vw; /* Cover full viewport width */
+    box-shadow: 0px 4px 66.9px 50px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+#hero-title{
+    margin: 0px;
+    font-family: "Outfit", sans-serif;
+    width: 90%;
+    height: auto;
+    font-size: 11vw; /* Reduced size for better scaling */
+    font-weight: 500;
+    letter-spacing: 0.3vw;
+    color: rgba(255, 255, 255, 0.10);
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #FFF;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(1px);
+    text-align: center;
+
+
+}
+
+#NavBar{
+ 
+
+    margin: 0px;
+    width:100% ;
+    height: 55px;
+    flex-shrink: 0;
+    /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
+    mix-blend-mode: color-burn;*/
+    background-color: #112A44;
+
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: blur(2px); */
+    z-index: 4;
+    display: none;
+
+}
+#logo{
+
+     position: fixed; 
+    width: 35vw;
+    height: 8vh;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height:68.75% ;
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); */
+
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    padding-top: 6px;
+    z-index: 4;
+    
+
+}
+a {
+    text-decoration: none;
+    display: none;
+
+  }
+#Menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    right:0;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top:0px;
+    z-index: 4;
+    width: 450px;
+    display: none;
+
+}
+.menu-class{
+    display:none;
+    margin-top:12px;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27.5px; 
+    text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.479);
+    display: none;
+
+}
+.menu-class:hover{
+    
+    text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.479);
+}
+
+#second-section{
+    /* height:1387px ; */
+    height: auto;
+    width: 100vw;
+}
+
+.title{
+    width:fit-content;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    left:100px;
+    top:20px;
+    margin-bottom: 0px;
+    /* title1 */
+    font-family: Outfit;
+    /* font-size: 70px; */
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.3rem;
+
+    width: 80%;
+    font-size: 40px; /* Smaller font size for mobile */
+    left: 10px; /* Adjust left positioning */
+    top: 10px; /* Adjust top positioning */
+    letter-spacing: 2px; /* Reduce letter spacing */
+}
+.line{
+    margin-top: 18px;
+    width: 18.5rem;
+    height: 5px;
+    background: #FFF;
+
+    
+    height: 3px; /* Adjust height for smaller screens */
+    margin-top: 10px;
+}
+
+.sur2{
+   
+    height: auto;
+    margin-top:2px;
+    display: flex;
+    justify-content:space-evenly;
+
+    flex-direction: column; /* Stack stats vertically */
+    align-items: center; /* Center stats */
+    gap: 20px; /* Add gap between stats */
+    overflow-x: hidden;
+
+
+}
+#aboutTunisia-img{
+
+
+    flex-shrink: 0;
+
+    background: url("assets/about.jpeg") lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 96px 0px rgba(0, 0, 0, 0.25);
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+    width: 90%; /* Make image responsive */
+    height:16rem; /* Adjust height proportionally */
+    border-radius: 15px; /* Smaller border-radius for mobile */
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25); /* Reduce box shadow */
+}
+
+
+
+.paragraph{
+    text-align: start;
+    margin-top: 1rem;
+    width: 90%;
+    height: 45%;
+    flex-shrink: 0;
+    color: #2B5F9D;
+    margin-left: auto;
+    margin-right: 1rem;
+    /* paragraph */
+    font-family: Outfit;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25rem; 
+/* 
+    width: 100%; 
+    height: auto; 
+    font-size: 16px; 
+    margin-top: 20px;  */
+
+}
+.stats{
+    margin-top:120px;
+    display: flex;
+    justify-content:space-evenly;
+
+    flex-direction: column; /* Stack stats vertically */
+    align-items: center; /* Center stats */
+    gap: 20px; /* Add gap between stats */
+
+}
+.stat-box{
+
+    width: 30%;
+    height: 20%;
+    flex-shrink: 0;
+
+
+    width: 100%; /* Make stat boxes responsive */
+    height: auto; /* Adjust height to fit content */
+    margin-bottom: 20px; /* Add margin-bottom */
+
+}
+.number{
+
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin:10px;
+
+
+    font-size: 30px; /* Smaller font size for mobile */
+    letter-spacing: 1.5px; /* Adjust letter spacing */
+
+}
+.specification{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin:10px;
+
+
+    font-size: 25px; /* Smaller font size for mobile */
+    letter-spacing: 1px; 
+}
+
+.details{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin:10px;
+    text-shadow: 0px 0px 40px rgba(0, 59, 148, 0.938);
+
+
+    font-size: 12px; /* Smaller font size for mobile */
+        letter-spacing: 0.5px;
+    }
+
+
+
+    #third-section {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+     
+    }
+    
+    
+    
+   
+    .blur {
+        position: absolute;
+        top: 95px;
+        bottom: 95px;
+        width: 100%; 
+        left: 0px;
+        right: 0px;
+        
+        z-index: 1;
+        background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+        filter: blur(30px);
+    } 
+    
+    
+    .upside-img {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .content-container {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        color: #112A44;
+        font-family: Outfit;
+        text-align: center;
+    }
+    
+    .title2 {
+       
+        margin: 0;
+        margin-right: 0px; 
+        /* margin-right: 0px; */
+        /* font-size: 70px; */
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    
+        color: #112A44;
+        text-align: right;
+        font-family: Outfit;
+        font-style: normal;
+        padding-right: 0;
+        line-height: normal;
+        
+        
+        }
+      
+    .line2{
+        position: relative; 
+        left: 0.7rem; 
+        width: 28rem;
+        background: #112A44;
+        margin-right: 0px;
+        
+    
+    }
+    
+   
+    .container{
+        
+        max-width: 1200px;
+        width: 84%;
+        margin-bottom: 80px; 
+        margin-right: auto ;
+        margin-left: auto;
+    }
+    .slider-wrapper {
+        position:relative;
+    
+    }
+    .slider-wrapper .slide-button{
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        border: none;
+        outline: none;
+        /* background: #000; */
+        background: #112A44;
+    
+        font-size: 2.2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    
+    }
+    .slider-wrapper .slide-button:hover{
+        background: #444;
+    }
+    
+    .slider-wrapper .slide-button#prev-slide{
+        left: -20px;
+        display:none;
+        
+    }
+    .slider-wrapper .slide-button#next-slide{
+        right: -20px;
+    }
+    .slider-wrapper .images{
+        display: grid;
+        gap:18px;
+        font-size: 0;
+        margin-bottom: 30px;
+        overflow-x: auto; /*akelli tsawer hiya west lpage*/
+        scrollbar-width: none;
+        grid-template-columns: repeat(10,1fr);
+    }
+    
+    .slider-wrapper .images::-webkit-scrollbar{
+        display:none; 
+    
+    }
+    .slider-wrapper .images .image-item{
+        width:325px;
+        height: 400px;
+        object-fit: cover;
+    
+    }
+    
+    .container .slider-scrollbar{
+        height: 24px;
+        width: 100%;
+        
+    }
+    .slider-scrollbar .scrollbar-track{
+        height:2px;
+        width: 100%;
+        background: #ccc;
+        position: relative;
+        border-radius: 4px;
+    
+    }
+    .slider-scrollbar:hover .scrollbar-track{
+        height: 4px;
+    
+    }
+    
+    .slider-scrollbar .scrollbar-thumb{
+        position: absolute;
+        height:100%;
+        width: 50%;
+        /* background: #000; */
+        background: #112A44;
+        border-radius: inherit;
+        cursor:grab;
+    }
+    
+    .slider-scrollbar .scrollbar-thumb:active{
+        cursor: grabbing;
+        height:8px;
+        top: -2px;
+    
+    
+    
+    
+    }
+    .slider-scrollbar .scrollbar-thumb::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        bottom: -10px;
+    
+    
+    }
+    
+    @media only screen and (max-width: 1023px) {
+        .slider-wrapper .slide-button {
+          display: none !important;
+        }
+        .slider-wrapper .images {
+          gap: 10px;
+          margin-bottom: 15px;
+          scroll-snap-type: x mandatory;
+        }
+        .slider-wrapper .images .image-item {
+          width: 280px;
+          height: 380px;
+        }
+        .slider-scrollbar .scrollbar-thumb {
+          width: 20%;
+        }
+      }
+    
+    .heritage-p{
+    width: 85vw;
+    height: auto;
+    flex-shrink: 0;
+    color: #1F447E;
+    text-align: center;
+    
+    margin: 45px auto 20px auto;;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    }
+
+    #unesco-link{
+        color:#2f5799;
+        font-weight: 500;
+       
+    
+    }
+    #seasons-section{
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+     }
+     .title3{
+        width:fit-content;
+        color: #FFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        left:100px;
+        top:20px;
+        margin-bottom: 0px;
+        /* title1 */
+        font-family: Outfit;
+        /* font-size: 70px; */
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.3rem;
+
+        width: 80%;
+        font-size: 30px; /* Smaller font size for mobile */
+        left: 10px; /* Adjust left positioning */
+        top: 10px; /* Adjust top positioning */
+        letter-spacing: 2px; /* Reduce letter spacing */
+
+     }
+     .line3{
+       margin-top: 25px;
+        width: 22rem;
+        height: 3px;
+        background: #FFF;
+        
+    
+    }
+      .seasons{
+        align-self: center;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        margin: 50px 10px;
+        width: 80%;  
+       
+        height: auto;
+        flex-shrink: 0;
+      }
+    .season-item{
+        width: 15rem;
+        height: 18rem;
+        flex-shrink: 0;
+        border-radius: 34px;
+        margin: 17px 18px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    
+        transition: transform 0.3s ease-in-out;
+
+    
+    }
+    
+     .season-item:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);
+    
+    }
+        
+    #winter{ 
+        background: url("assets/winter.jpg") lightgray 50% / cover no-repeat;
+      
+      
+    }
+    
+    #spring{
+        background: url("assets/spring.jpg") lightgray 50% / cover no-repeat;
+    }
+    #summer{
+        background: url("assets/summer.jpg") lightgray 50% / cover no-repeat;
+    
+    }
+    #autumn{
+        background: url("assets/autumn.jpeg") lightgray 50% / cover no-repeat;
+    }
+    .season-word{
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px black;
+        margin-bottom: 20px;
+    
+    }
+    #winter-section{
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        height: auto;
+        flex-shrink: 0; 
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    } 
+    #winter-section .bg{
+        background: url("assets/snow4.png");
+        box-shadow: 0 0 80px 38px #c1d0e200 inset;
+        mix-blend-mode:overlay;  
+        background-size: cover;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #winter-section .winter-content {
+        position: relative;
+        z-index: 1; 
+       width: 100%;
+    }
+    .season-p{
+        width: 90%;
+        height: auto;
+        flex-shrink: 0;
+        color: #1F447E;
+        font-family: Outfit;
+        /* font-size: 30px; */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin: 5PX AUTO 20PX AUTO;
+        font-size: 20px;
+    } 
+    
+    .season-title{
+        color: #FFF;
+        text-align: center;
+        text-shadow: 1px 4px 31.5px rgba(0, 0, 0, 0.25);
+        font-family: Outfit;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 3.5px;
+        margin-bottom: 13px;
+    }
+    
+    
+    .card-container{
+        width: 100VW;
+        height: auto;
+        flex-shrink: 0;
+        /* padding:15px; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin:30px auto;
+    }
+    .card{
+        width: 90vw;
+        height: auto;
+        transition: transform 0.2s;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .card h2{
+        
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 30 px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:295px;
+        color: #FFF; 
+        /* color: #112A44; */
+        font-family: Outfit;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        display:none;
+    }
+    .card-img-cont{
+        width: 295px;
+        height: 398px;
+        filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.336));
+        flex-shrink: 0;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card-img-cont img{
+        width: 295px;
+        height: 398px;
+    }
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: start; */
+        justify-content:center;
+    }
+    .card-info h3{
+        text-shadow: 1px 4px 34px rgba(0, 0, 0, 0.397);
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-bottom: 5px;
+        align-self: center;
+    }
+    .card-info p{
+        color: #1F447E;
+        /* color: #A4B5C2; */
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        align-self: center;
+        text-align: center;
+    }
+    .card-info a{
+        color: #1F447E;
+        /* color: #A4B5C2; */
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+    }
+    
+    .card:hover {
+        filter: drop-shadow(0px 4px 19.8px rgba(0, 0, 0, 0.25));
+       
+        transform: translateY(-10px);
+    }
+
+    .btn-season {
+        align-self: center; 
+        cursor: pointer;
+        display: inline-block;
+        position: relative; 
+        transition: 0.5s;
+    
+        border-radius: 20px;
+        padding:10px 20px;
+        color:#112A44 ;
+        background-color: rgba(255, 255, 255, 0) ;
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        border:2px solid #112A44;
+        text-align: center;
+        width: fit-content;
+        margin:10px 0px;
+        margin-bottom: 45px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+        
+      }
+      
+      .btn-season:after {
+        content: '\f101';
+        font-family: 'FontAwesome';
+        position: absolute;
+        opacity: 0;
+        right: -30px;
+        top: 50%; 
+        transform: translateY(-50%); 
+        transition: 0.5s;
+        font-weight: 400; 
+        font-size: 16px; 
+        /* color:#112A44;  */
+        color: white;
+      }
+      
+      .btn-season:hover {
+        padding-right: 30px;
+        padding-left: 15px;
+        background-color: #112A44;
+        color: white;
+    
+    
+      }
+      
+      .btn-season:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+
+      #spring-section{
+        position: relative;
+        z-index: 1;
+        width: 100 vw;
+        height: auto;
+        flex-shrink: 0; 
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    } 
+    #spring-section .bg{
+        background: url("assets/flowerbg.png");
+        box-shadow: 0 0 80px 38px #c1d0e200 inset;
+        mix-blend-mode:overlay;  
+        background-size: cover;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+    }
+    #spring-section .spring-content {
+        position: relative;
+        z-index: 1; 
+       
+    }
+    
+    #summer-section{
+        position: relative;
+        z-index: 1;
+        width: 100 vw;
+        height: auto;
+        flex-shrink: 0; 
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    } 
+    #summer-section .bg{
+        background: url("assets/summerbg3.png");
+        box-shadow: 0 0 80px 38px #c1d0e200 inset;
+        mix-blend-mode:overlay;  
+        background-size: cover;
+        width:100vw;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+    }
+    #summer-section .summer-content {
+        position: relative;
+        z-index: 1; 
+       
+    }
+    #autumn-section{
+        position: relative;
+        z-index: 1;
+        width: 100 vw;
+        height: auto;
+        flex-shrink: 0; 
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    } 
+    #autumn-section .bg{
+        background: url("assets/autmnbg.png");
+        box-shadow: 0 0 80px 38px #c1d0e200 inset;
+        mix-blend-mode:overlay;  
+        background-size: cover;
+        width:100vw;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.17;
+        width: 100%;
+        height: 100%;
+    }
+    #autumn-section .autumn-content {
+        position: relative;
+        z-index: 1; 
+       
+    }
+    #articles-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .title4{
+        margin: 5px 25px 0px auto; 
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+    
+        color: #112A44;
+        align-self: end;
+        font-family: Outfit;
+        
+        font-style: normal;
+        width: auto;
+        line-height: normal;
+    }
+    .line4{
+        /* position: relative; */
+        align-self: end;
+        width: 500px;
+        height: 5px;
+        background: #112A44;
+        margin-right: 28px;
+    }
+    .articles-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 90vw;
+        margin: 70px auto 50px auto;
+        justify-content: center;
+        height: auto;
+    }
+    
+    .article-btn {
+        cursor: pointer;
+        position: relative;
+        transition: opacity 0.5s, padding 0.5s; /* Ensure smooth transition */
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #112A44;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        border: 2px solid #112A44;
+        text-align: center;
+        width: fit-content;
+        margin: 10px 0px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+        opacity: 0; /* Initially invisible */
+        transform: translateY(10px); /* Start with a slight offset */
+    }
+    
+    .article-btn:after {
+        content: '\f101';
+        font-family: 'FontAwesome';
+        position: absolute;
+        opacity: 0; /* Initially invisible */
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: opacity 0.8s, right 0.8s; /* Transition for icon */
+        font-weight: 400;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .article {
+        height: 420px;
+        width: 340px;
+        border-radius: 34px;
+        transition: transform 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 10pxpx;
+    }
+    
+    .article::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .article:hover::before {
+        filter: blur(2px);
+    }
+    
+    .article:hover .article-btn {
+        display: flex;
+        opacity: 1; /* Make button visible */
+        transform: translateY(0); /* Move button into place */
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);
+        color: white;
+        background-color: #112A44;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    
+    .article:hover .article-btn:after {
+        opacity: 1; /* Make icon visible */
+        right: 10px; /* Move icon to position */
+    }
+    
+    .article:hover{
+        transform: scale(1.005);
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);
+    } 
+    #article1{ 
+        background: url("assets/medina.jpg") lightgray 50% / cover no-repeat;
+        background-size: 100%;
+        transition:  0.4s ease-in-out smooth;
+    }
+    #article1:hover{
+        background-size: 110%;
+    }
+    
+    #article2{ 
+        background: url("assets/sidibou.jpeg") lightgray 50% / cover no-repeat;
+        background-size: 100%;
+        transition:  0.4s ease-in-out smooth;
+    }
+    #article2:hover{
+        background-size: 110%;
+    }
+    #article3{ 
+        background: url("assets/tradition.jpg") lightgray 50% / cover no-repeat;
+        background-size: 100%;
+        transition:  0.4s ease-in-out smooth;
+    }
+    #article3:hover{
+        background-size: 110%;
+    }
+    
+    
+    .article-title{
+        /* align-self: start; */
+        margin: 15px auto 0px 30px;
+         text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.548); 
+        /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+
+        color: #112A44;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        width: 80%;
+        z-index: 10; /* Bring it to the front */
+        position: relative; /* To respect z-index */
+        
+        
+    }
+    
+    .article-elements{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 95vw;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .date{
+        align-self: start;
+        margin: 15px auto 0px 30px;
+     
+        text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.712);
+        color: #857a7a;
+        font-family: Outfit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+   
+    .article-title {
+        display: block;
+        visibility: visible;
+    }
+            
+    /*first media*/
+
+    @media(max-width:320px){
+        .blur {
+           
+
+
+            position: absolute;
+            top: 85px;
+            bottom: 85px;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+            background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+            filter: blur(20px);
+           
+        } 
+        body{
+            margin:0;
+            width: 100%; 
+            background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
+            background-attachment: fixed;
+            /* overflow:hidden; */
+            height: auto;
+        }
+        
+        .body-beach{
+            margin:0;
+            width:100%;
+            background:whitesmoke; 
+            background-attachment: fixed;
+        }
+        /* 
+        
+        /* Ensure #hero covers the full viewport height */
+        #hero {
+            background-image: url("assets/hero.jpg");
+            background-size: cover; /* Ensure the image covers the entire area */
+            background-position: center; /* Center the image */
+            min-height: 100vh; /* Cover full viewport height */
+            width: 100%; /* Cover full viewport width */
+            box-shadow: 0px 4px 66.9px 50px rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        
+        .title2{
+            font-size: 1.6rem;
+
+        }
+        .line2{
+            left: 0.6rem; 
+            width: 25rem;
+            
+        }
+        .title3{
+
+            font-size:30px;
+           
+    
+         }
+
+         .article {
+            height: 320px;
+            width: 260px;
+            border-radius: 34px;
+            transition: transform 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10pxpx;
+        }
+    }
+
+
+    /*taille L*/
+    @media (min-width: 376px) and (max-width: 425px) {
+        .blur {
+           
+
+
+            position: absolute;
+            top: 110px;
+            bottom: 110px;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+            background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+            filter: blur(20px);
+           
+        } 
+        .paragraph{
+            text-align: start;
+            margin-top: 1rem;
+            width: 90%;
+            height: 45%;
+            
+            font-size: 1rem;
+            font-weight: 500;
+            
+            letter-spacing: 0.25rem; 
+       
+        
+        } 
+        .title2{
+            font-size: 2rem;
+
+        }
+        .line2{
+            left: 3.7rem; 
+            width: 30rem;
+            
+        }
+        .title3{
+
+            font-size: 2.2rem;
+           text-align: left;
+    
+         }
+         .line3{
+        
+           margin-top: 25px;
+            width: 22rem;
+            height: 3px;
+            background: #FFF;
+            
+        
+        }
+          .seasons{
+            align-self: center;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+            margin: 50px 10px;
+            width: 80%;  
+           
+            height: auto;
+            flex-shrink: 0;
+          }
+        .season-item{
+            width: 18rem;
+            height: 21rem;
+        }
+        
+    }
+
+@media only screen and (min-width:768px) 
+{    .blur {
+           
+
+
+    position: absolute;
+    top: 235px;
+    bottom: 235px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+    filter: blur(20px);
+   
+} 
+    body{
+    width: 100vw;
+    }
+    
+    #NavBar{
+        
+            margin: 0px;
+            width:100vw ;
+            height: 55px;
+            flex-shrink: 0;
+            /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
+            mix-blend-mode: color-burn;*/
+            background-color: #112A44;
+            /* position: absolute; */
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* filter: blur(2px); */
+            z-index: 4;
+        
+    
+        }
+    
+#hero-title{
+    margin:0px;
+    font-family: "Outfit", sans-serif;
+
+    flex-shrink: 0;
+    font-size:5rem;
+    font-weight: 400px;
+    letter-spacing:3.6px;
+    color: rgba(255, 255, 255, 0.10);
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 3px #FFF;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(1px);
+    backdrop-filter: opacity(50%);
+    text-align: center;
+}
+    #hero-title{
+        
+        -webkit-text-stroke: 3px #FFF; 
+        
+
+
+    }
+    #logo{
+
+        position: fixed;
+        width: 18vw;
+        height: 5vh;
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height:68.75% ;
+        text-transform: uppercase;
+        /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); */
+
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0px;
+        padding-top: 6px;
+        z-index: 4;
+        
+
+    }
+    .paragraph{
+        text-align: start;
+        margin-top: 1.5rem;
+        width: 90%;
+        height: 45%;
+        
+        font-size: 1rem;
+        font-weight: 500;
+        
+        letter-spacing: 0.6rem; 
+   
+    
+    } 
+    #Menu{
+        
+        position: fixed;
+        top: 0;
+        right:0;
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-top:0px;
+        z-index: 4;
+        width: 450px;
+        height: 50px;
+        padding-right: 20px;
+        text-transform: capitalize;
+
+
+    }
+    .menu-class{
+        display: block;
+        margin-top:12px;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27.5px; /* 110% */
+        text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.479);
+        /* height: 500px; */
+    }
+    .menu-class:hover{
+        text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.479);
+    }
+    #aboutTunisia-img{
+
+
+        width: 80%;
+        height:25rem; /* Adjust height proportionally */
+     
+    }
+        
+
+    .title2{
+        font-size: 3.2em;
+
+    }
+    .line2{
+        left: 14rem; 
+        width: 39rem;
+        
+    }
+    .title3{
+
+        font-size: 3rem;
+       text-align: left;
+       margin-left: 10px;
+
+     }
+     .line3{
+    
+        margin-top: 25px;
+        width: 38rem;
+        height: 3px;
+        background: #FFF;
+        
+    
+    }
+      .seasons{
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        margin: 50px 10px;
+        width: 80%;  
+       
+        height: auto;
+        flex-shrink: 0;
+      }
+    .season-item{
+        width: 15rem;
+        height: 18rem;
+    }
+
+    .article {
+        height: 450px;
+        width: 420px;
+        border-radius: 34px;
+        transition: transform 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 10pxpx;
+    }
+    .article-elements{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: auto;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .article-title{
+        /* align-self: start; */
+        margin: 15px auto 0px auto;
+         text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.548); 
+        /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+
+        color: #112A44;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        width: 80%;
+        text-align: center;
+       
+        
+        
+    }
+    .date{
+        align-self: center;
+        margin: 15px auto 0px auto;
+     
+        text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.712);
+        color: #857a7a;
+        font-family: Outfit;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+}
+@media only screen and (min-width:1000px) 
+    {   
+        #hero-title{
+       
+            font-size:6rem;
+            
+        }
+        .blur {
+           
+
+
+            position: absolute;
+            top: 310px;
+            bottom: 310px;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            z-index: 1;
+            background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+            filter: blur(20px);
+           
+        } 
+        body{
+            margin:0;
+            width: 100vw; 
+            background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
+            background-attachment: fixed;
+            overflow-x:hidden; 
+            height: auto;
+        
+        }
+        
+        #hero{
+        margin: 0;
+    }
+        #logo{
+            width: 13vw;
+            height: 5vh;
+
+        }
+        
+    .sur2{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        /* margin-left: 20px; */
+        margin-top: 45px;
+        overflow-x: hidden;
+    }
+    #aboutTunisia-img{
+
+        width: 25rem;
+        height: 25rem;
+        flex-shrink: 0;
+        border-radius: 30px;
+        /* background: url("assets/about2.jpeg") lightgray 50% / cover no-repeat; */
+        background: url("assets/about.jpeg") lightgray 50% / cover no-repeat;
+        box-shadow: 0px 4px 96px 0px rgba(0, 0, 0, 0.25);
+        margin-top: auto;
+        margin-bottom: auto;
+        /* margin-right: 90px; */
+    }
+    .paragraph{
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 450px;
+        height: auto;
+        flex-shrink: 0;
+        color: #2B5F9D;
+        margin-left: 0px;
+        /* paragraph */
+        font-family: Outfit;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+
+    }
+    #Menu{
+            
+        position: fixed;
+        top: 0;
+        right:0;
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-top:0px;
+        z-index: 4;
+        width: fit-content;
+        height: 50px;
+        padding-right: 55px; 
+
+    }
+
+  
+    
+    .stats{
+        margin-top:120px;
+        display: flex;
+        justify-content:space-evenly;
+
+        flex-direction: row; /* Stack stats vertically */
+        align-items: center; /* Center stats */
+        gap: 20px; /* Add gap between stats */
+        width: 100vw;
+
+    }
+    .stat-box{
+
+        width: 30%;
+        height: 20%;
+        flex-shrink: 0;
+
+
+    
+        height: auto; /* Adjust height to fit content */
+        margin-bottom: 20px; /* Add margin-bottom */
+
+    }
+    .number{
+
+        color: #FFF;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        margin:10px;
+
+
+        font-size: 30px; /* Smaller font size for mobile */
+        letter-spacing: 1.5px; /* Adjust letter spacing */
+
+    }
+    .specification{
+        color: #FFF;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        margin:10px;
+
+
+        font-size: 25px; /* Smaller font size for mobile */
+        letter-spacing: 1px; 
+    }
+
+    .details{
+        color: #FFF;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin:10px;
+        text-shadow: 0px 0px 40px rgba(0, 59, 148, 0.938);
+
+
+        font-size: 12px; /* Smaller font size for mobile */
+            letter-spacing: 0.5px;
+        }
+
+        .title2{
+            font-size: 4em;
+
+        }
+        .line2{
+            left: 24rem; 
+            width: 55rem;
+            height: 3.5px;
+            
+        }
+        .title3{
+
+            font-size: 4.8rem;
+           text-align: left;
+           margin-left: 10px;
+    
+         }
+         .line3{
+        
+            margin-top: 25px;
+            width: 58rem;
+            height: 4px;
+            background: #FFF;
+            
+        
+        }
+          .seasons{
+            align-self: center;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+            margin: 50px 10px;
+            width: 80%;  
+           
+            height: auto;
+            flex-shrink: 0;
+            margin-bottom: 100px;
+            
+          }
+        .season-item{
+            width: 19rem;
+            height: 22rem;
+            margin-top:30px;
+        }
+
+        #winter-section{
+            position: relative;
+            z-index: 1;
+            width: 100 vw;
+            height: auto;
+            flex-shrink: 0; 
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          
+        } 
+        #winter-section .bg{
+            background: url("assets/snow4.png");
+            box-shadow: 0 0 80px 38px #c1d0e200 inset;
+            mix-blend-mode:overlay;  
+            background-size: cover;
+            width:100%;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.2;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #winter-section .winter-content {
+            position: relative;
+            z-index: 1; 
+           
+        }
+        .season-p{
+            width: 90vw;
+            height: 220px;
+            flex-shrink: 0;
+            color: #1F447E;
+            font-family: Outfit;
+            /* font-size: 30px; */
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-align: center;
+            margin: 10PX AUTO 20PX AUTO;
+            font-size: 20px;
+        } 
+        
+        .season-title{
+            color: #FFF;
+            text-align: center;
+            text-shadow: 1px 4px 31.5px rgba(0, 0, 0, 0.25);
+            font-family: Outfit;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3.5px;
+        }
+        
+        
+        .card-container{
+            max-width: 90vw;
+            height: auto;
+            flex-shrink: 0;
+            margin-right: auto;
+            margin-left: auto;
+            padding:15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .card{
+            width: 270px;
+            height: auto;
+            transition: transform 0.2s;
+
+        
+        }
+        
+
+        .card h2{
+            margin-top: 0px;
+            margin-bottom: 30 px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:auto;
+            color: #FFF; 
+            /* color: #112A44; */
+            font-family: Outfit;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            align-self: center;
+            margin-bottom: 40px;
+        }
+        .card-img-cont{
+            width: 250px;
+            height: 300px;
+            filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.336));
+            flex-shrink: 0;
+        }
+        
+        .card-img-cont img{
+            width: 250px;
+            height: 300px;
+        }
+        .card-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            margin-left: 12px;
+        }
+        .card-info h3{
+            text-shadow: 1px 4px 34px rgba(0, 0, 0, 0.397);
+            color: #FFF;
+            font-family: Outfit;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+            align-self:start; 
+
+        }
+        .card-info p{
+            color: #1F447E;
+            /* color: #A4B5C2; */
+            font-family: Outfit;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.75px;
+            text-align: left;
+        }
+        .card-info a{
+            color: #1F447E;
+            /* color: #A4B5C2; */
+            font-family: Outfit;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+        }
+        
+        .card:hover {
+            filter: drop-shadow(0px 4px 19.8px rgba(0, 0, 0, 0.25));
+           
+            transform: translateY(-10px);
+        }
+
+        .btn-season {
+            cursor: pointer;
+            display: inline-block;
+            position: relative; 
+            transition: 0.5s;
+        
+            border-radius: 20px;
+            padding:10px 20px;
+            color:#112A44 ;
+            background-color: rgba(255, 255, 255, 0) ;
+            font-family: Outfit;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+            border:2px solid #112A44;
+            text-align: center;
+            width: fit-content;
+            margin:10px 0px;
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+           
+            align-self: flex-start;
+          }
+          
+          .btn-season:after {
+            content: '\f101';
+            font-family: 'FontAwesome';
+            position: absolute;
+            opacity: 0;
+            right: -30px;
+            top: 50%; 
+            transform: translateY(-50%); 
+            transition: 0.5s;
+            font-weight: 400; 
+            font-size: 16px; 
+            /* color:#112A44;  */
+            color: white;
+          }
+          
+          .btn-season:hover {
+            padding-right: 30px;
+            padding-left: 15px;
+            background-color: #112A44;
+            color: white;
+        
+        
+          }
+          
+          .btn-season:hover:after {
+            opacity: 1;
+            right: 10px;
+          }
+
+          #articles-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .article-elements{
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: auto;
+            margin-bottom: 50px;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .articles-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: fit-content;
+            width: auto;
+            margin: 70px auto 50px auto;
+            justify-content: center;
+            height: auto;
+        }
+
+        .article {
+            height: 400px;
+            width: 320px;
+            border-radius: 34px;
+            transition: transform 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10pxpx;
+        }
+        .article-title{
+            /* align-self: start; */
+            margin: 15px auto 0px 30px;
+             text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.548); 
+            /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+    
+            color: #112A44;
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            width: 80%;
+            z-index: 10; /* Bring it to the front */
+            position: relative; /* To respect z-index */
+            
+            
+        }
+        .date{
+            align-self: center;
+            margin: 15px auto 0px auto;
+         
+            text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.712);
+            color: #857a7a;
+            font-family: Outfit;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+        }
+    
+
+        .articles-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: fit-content;
+            width: 100vw;
+            margin: 70px auto 50px auto;
+            justify-content: center;
+            height: auto;
+        }
+         
+        .article-elements{
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 95vw;
+            margin-bottom: 50px;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+        .date{
+            align-self: start;
+            margin: 15px auto 0px 30px;
+         
+            text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.712);
+            color: #857a7a;
+            font-family: Outfit;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+        }
+        .article-title{
+            align-self: start; 
+            margin: 15px auto 0px 30px;
+             text-shadow: 1px 4px 100px 5px rgba(0, 0, 0, 0.548); 
+            /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+    
+            color: #112A44;
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.5px;
+             width: 80%; 
+            z-index: 10; /* Bring it to the front */
+            position: relative; /* To respect z-index */
+
+            text-align: left;
+            
+            
+        }
+       
+        
+       
+
+        
+}
+@media only screen and (min-width:1400px) {
+    #hero-title{
+       
+        font-size:8rem;
+        
+    }
+
+    .blur {
+           
+
+
+        position: absolute;
+        top: 450px;
+        bottom: 450px;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+        background: radial-gradient(50% 50% at 50% 50%, #A4B5C2 0%, #F3EAD5 47.5%, #F3EAD5 50%, #F3EAD5 75%, #F3EAD5 100%);
+        filter: blur(20px);
+       
+    } 
+    body{
+        margin:0;
+        width: 100vw; 
+        background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
+        background-attachment: fixed;
+        overflow-x:hidden; 
+        height: auto;
+    
+
+    }
+    
+    .sur2{
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;  
+
+
+
+    }
+    
+    #aboutTunisia-img{
+
+        width: 420px;
+        height: 523px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        /* background: url("assets/about2.jpeg") lightgray 50% / cover no-repeat; */
+        background: url("assets/about.jpeg") lightgray 50% / cover no-repeat;
+        box-shadow: 0px 4px 96px 0px rgba(0, 0, 0, 0.25);
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 20px;
+        
+        }
+    .paragraph{
+        margin-top: 60px;
+        margin-left: 0px;
+        width: 650px;
+        height: 492px;
+        flex-shrink: 0;
+        color: #2B5F9D;
+        margin-left: 0px;
+        /* paragraph */
+        font-family: Outfit;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-align: center;
+    
+    }
+    .title2{
+        font-size: 5rem;
+
+    }
+    .line2{
+        left: 40rem; 
+        width: 55rem;
+        height: 3.5px;
+        
+    }
+    .seasons{
+        align-self: center;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        justify-content:center;
+        align-items: center;
+        margin: 50px 10px;
+        width: 100%;  
+       
+        height: auto;
+        flex-shrink: 0;
+        margin-bottom: 145px;
+      }
+
+
+      #winter-section{
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        height: auto;
+        flex-shrink: 0; 
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    } 
+    #winter-section .bg{
+        background: url("assets/snow4.png");
+        box-shadow: 0 0 80px 38px #c1d0e200 inset;
+        mix-blend-mode:overlay;  
+        background-size: cover;
+        width:100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.2;
+        height: 100%;
+    }
+    
+    #winter-section .winter-content {
+        position: relative;
+        z-index: 1; 
+       
+    }
+    .season-p{
+        width: 1000px;
+        height: 220px;
+        flex-shrink: 0;
+        color: #1F447E;
+        font-family: Outfit;
+        /* font-size: 30px; */
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin: 10PX AUTO 20PX AUTO;
+        font-size: 20px;
+    } 
+    
+    .season-title{
+        color: #FFF;
+        text-align: center;
+        text-shadow: 1px 4px 31.5px rgba(0, 0, 0, 0.25);
+        font-family: Outfit;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 3.5px;
+    }
+    
+    
+    .card-container{
+        width: 1135px;
+        height: 700px;
+        flex-shrink: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding:15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: 325px;
+        height: auto;
+        transition: transform 0.2s;
+    
+    }
+    .card h2{
+        margin-top: 0px;
+        margin-bottom: 30 px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:295px;
+        color: #FFF; 
+        /* color: #112A44; */
+        font-family: Outfit;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+    .card-img-cont{
+        width: 295px;
+        height: 398px;
+        filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.336));
+        flex-shrink: 0;
+    }
+    
+    .card-img-cont img{
+        width: 295px;
+        height: 398px;
+    }
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .card-info h3{
+        text-shadow: 1px 4px 34px rgba(0, 0, 0, 0.397);
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-bottom: 5px;
+    }
+    .card-info p{
+        color: #1F447E;
+        /* color: #A4B5C2; */
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.75px;
+    }
+    .card-info a{
+        color: #1F447E;
+        /* color: #A4B5C2; */
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+    }
+    
+    .card:hover {
+        filter: drop-shadow(0px 4px 19.8px rgba(0, 0, 0, 0.25));
+       
+        transform: translateY(-10px);
+    }
+
+    .article {
+        height: 420px;
+        width: 340px;
+     
+    }
+  
+    .articles-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: fit-content;
+        width: 80vw;
+        margin: 70px auto 50px auto;
+        justify-content: center;
+        height: auto;
+    }
+     
+    .article-elements{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        /* width: 95vw; */
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+}
+
