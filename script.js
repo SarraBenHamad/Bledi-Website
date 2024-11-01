@@ -106,3 +106,46 @@ mybutton.addEventListener("click", function() {
   
 }
 
+// Select the 'winter' div
+const winterDiv = document.getElementById("winter");
+
+winterDiv.addEventListener("click", () => {
+    // Get the 'third-section' div
+    const targetDiv = document.getElementById("winter-section");
+
+    // Scroll smoothly to the target div
+    targetDiv.scrollIntoView({ behavior: "smooth" });
+});
+
+const springDiv = document.getElementById("spring");
+
+springDiv.addEventListener("click", () => {
+    // Get the 'third-section' div
+    const targetDiv = document.getElementById("spring-section");
+
+    // Scroll smoothly to the target div
+    targetDiv.scrollIntoView({ behavior: "smooth" });
+});
+
+
+
+const summerDiv = document.getElementById("summer");
+
+summerDiv.addEventListener("click", () => {
+    // Get the 'third-section' div
+    const targetDiv = document.getElementById("summer-section");
+
+    // Scroll smoothly to the target div
+    targetDiv.scrollIntoView({ behavior: "smooth" });
+});
+
+
+const autumnDiv = document.getElementById("autumn");
+
+autumnDiv.addEventListener("click", () => {
+    // Get the 'third-section' div
+    const targetDiv = document.getElementById("autumn-section");
+
+    // Scroll smoothly to the target div
+    targetDiv.scrollIntoView({ behavior: "smooth" });
+});

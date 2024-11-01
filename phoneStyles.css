@@ -2465,3 +2465,120 @@ a {
     
 }
 
+footer {
+    background-color: #112A44;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-section {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #2B5F9D;
+}
+
+.footer-section .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    display: flex; /* Ensure the socials div is displayed */
+}
+
+.footer-section .socials a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+    color: #2B5F9D;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #857a7a;
+}
+.listajdida{
+    background-color: white;
+}
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+    }
+}
+
+
+.footer-section .socials a i {
+    margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+.footer-section .socials a {
+    display: flex; /* Ensure the icon and text are aligned */
+    align-items: center; /* Vertically center the icon and text */
+}
+.footer-section {
+    padding: 20px;
+    color: #fff; /* Ensure text color is visible */
+}
+
+
+.footer-section ul li:hover {
+    color: #2B5F9D;
+    cursor: pointer; /* Show cursor pointer on hover */
+}
