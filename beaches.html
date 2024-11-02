@@ -9,12 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" /> 
-    <link rel="stylesheet" href="oldStyles.css">
+    <link rel="stylesheet" href="beachesStyles.css">
+    <script src="script.js" defer></script>
+
+        <title>Beaches</title>
     </head>
 
     <body class="body-beach">
-        <div>
-            <div id="NavBar"></div>
+        <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+    </button>
+
+    
+    <div id="hero">
+            
+        <div id="NavBar">
+           
+        </div>  
+        <a href="index.html#hero" id="logo">Bledi</a>
+
+        <div id="Menu"> 
+            <a href="index.html#second-section" class="menu-class">about </a>
+            <a href="index.html#third-section" class="menu-class">heritage </a>
+            <a href="index.html#seasons-section" class="menu-class">seasons </a>
+            <a href="index.html#articles-section" class="menu-class">articles </a>
+            <a href="beaches.html" target="_blank" class="menu-class">beaches </a>
+
+        </div> 
+        <!--<div>
+             <div id="NavBar"></div>
                 <div id="Menu"> 
                     <a href="index.html" target="_blank" class="menu-class">about </a>
                     <a href="index.html"target="_blank" class="menu-class">heritage </a>
@@ -25,12 +52,12 @@
                 
                 </div>
                 <a href="index.html" id="logo" target="_blank">Bledi</a>
-        </div>  
+        </div>   -->
 
         <div id="beaches-container">
             <h1 class="beach-section-title">Recommended beaches </h1>
 
-            <div class="beach">
+            <div class="beach" onclick="window.open('https://www.google.com/maps/place/Grottes+El+Haouaria+%D9%83%D9%87%D9%88%D9%81+%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%B1%D9%8A%D8%A9%E2%80%AD/@37.0594022,10.9966791,17z/data=!3m1!4b1!4m6!3m5!1s0x131d3f43c5c70ef3:0xe532df865b2f8c15!8m2!3d37.0594022!4d10.9966791!16s%2Fg%2F11c1nc90zm?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                
                 <div class="bech-info">
                     <h2 class="beach-title">El Haouaria caves</h2>
@@ -56,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="beach">
+            <div class="beach" onclick="window.open('https://www.google.com/maps/place/Plage+Ras+el+Rmal/@33.9094822,10.8973861,17z/data=!3m1!4b1!4m6!3m5!1s0x13aaa38dbce82b1b:0x96d2f3bb8e617d21!8m2!3d33.9094778!4d10.899961!16s%2Fg%2F1hc2_8jvx?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                
                 <div class="bech-info">
                     <h2 class="beach-title">Ras El Rmal</h2>
@@ -79,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="beach">
+            <div class="beach" onclick="window.open('https://www.google.com/maps/place/Korbous+Plage/@36.8395286,10.5617658,15z/data=!3m1!4b1!4m6!3m5!1s0x12e2ab271ceae189:0x9dd6a830a14b8add!8m2!3d36.8395124!4d10.5720655!16s%2Fg%2F11b6b53wsk?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                
                 <div class="bech-info">
                     <h2 class="beach-title">Korbous</h2>
@@ -104,7 +131,7 @@
                     
                 </div>
             </div>
-            <div class="beach">
+            <div class="beach" onclick="window.open('https://www.google.com/maps/search/mahdia+beach/@35.512296,11.0314574,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
                
                 <div class="bech-info">
                     <h2 class="beach-title">Mahdia</h2>
@@ -131,6 +158,37 @@
             </div>
             
         </div>  
-        <footer></footer>   
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Bledi</h3>
+                    <p>Bledi is your ultimate guide to exploring the beauty of Tunisia.<br>From stunning beaches to historic sites,<br> we bring you everything you need to experience the best of Tunisia.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li onclick="location.href='index.html#hero'">Home</li>
+                        <li onclick="location.href='index.html#third-section'">Heritage</li>
+                        <li onclick="location.href='index.html#seasons-section'">Seasons</li>
+                        <li onclick="location.href='#'">Beaches</li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: benhamadsarra@gmail.com</p>
+                    <p>Phone: +216 123 456 789</p>
+                    <div class="socials">
+                        
+                        <a href="https://www.linkedin.com/in/sarra-ben-hamad/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SarraBenHamad" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/sarrabenhamad/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Bledi. All rights reserved.
+            </div>
+        </footer>
     </body>
 </html>

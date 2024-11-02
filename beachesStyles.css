@@ -1,0 +1,1081 @@
+
+.body-beach{
+    margin:0;
+    width:100%;
+    background:whitesmoke; 
+    background-attachment: fixed;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+    width: 50px;               
+    height: 50px;              
+    /* background-color:#1F447E ;  */
+    background-color: #112A44;
+    color: white;  
+    font-size: 20px;           /* Icon size */
+    text-align: center;        /* Center the icon horizontally */
+    line-height: 25px;         /* Center the icon vertically */
+    border-radius: 50%;        /* Make the button circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;           /* Change cursor to pointer */
+    transition: 0.3s;          /* Smooth transition for hover effects */
+    text-decoration: none;          
+  }
+  #btn-back-to-top:hover {
+    /* background-color: #112A44; */
+    background-color: #081a2d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  #btn-back-to-top:active {
+      transform: scale(0.95);    /* Make button slightly smaller when clicked */
+    }
+
+ 
+    #NavBar{
+        margin: 0px;
+        width:100% ;
+        height: 55px;
+        flex-shrink: 0;
+        /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
+        mix-blend-mode: color-burn;*/
+        /* background-color: #112A44; */
+    
+        /* position: absolute; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* filter: blur(2px); */
+        z-index: 4;
+        display: none;
+    
+    }
+    #logo{
+    
+        
+    
+            position: fixed;
+                
+            width: 35vw;
+                
+            height: 8vh;
+                
+            flex-shrink: 0;
+                
+            /* color: #FFF; */
+                
+            color: #112A44;
+                
+            font-family: Outfit;
+                
+            font-size: 2rem;
+                
+            font-style: normal;
+                
+            font-weight: 700;
+                
+            line-height:68.75%;
+                
+            text-transform: uppercase;
+                
+            /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);  */
+                
+            text-shadow: 0px 0px 20px rgb(21, 33, 82,0.7);
+                
+            text-shadow: 0px 0px 20px rgba(188, 197, 246, 0.7);
+                
+            position: fixed;
+                
+            width: auto;
+                
+            height: 5vh;
+                
+            flex-shrink: 0;
+                
+            top: 0;
+                
+            left: 0;
+                
+            display: flex;
+                
+            align-items: center;
+                
+            justify-content: center;
+                
+            margin: 0px;
+                
+            padding-top: 6px;
+            
+                    padding-left:10px;
+                
+            z-index: 4;
+                }
+    
+    
+    a {
+        text-decoration: none;
+        display: none;
+    
+      }
+    #Menu{
+        display: none;
+        /* position: fixed; */
+        top: 0;
+        right:0;
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top:0px;
+        z-index: 4;
+        width: 450px;
+        display: none;
+    
+    }
+    .menu-class{
+        display:none;
+        margin-top:12px;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27.5px; 
+        text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.479);
+        display: none;
+    
+    }
+    .menu-class:hover{
+        
+        text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.479);
+    }
+#beaches-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center; 
+    width: 100wh;
+    height: fit-content;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    /* background-color: red; */
+
+
+ }
+ .beach{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+    background-color: #FFF;
+    width: 90%;
+    height: fit-content;
+    transition: filter 0.2s ease-in-out; 
+    /* transition: all 0.5s ease-in-out; */
+    box-shadow: 0px 0px 2px rgba(77, 74, 74, 0.582), 0px 0px 5px rgba(44, 42, 42, 0.582);
+    margin-bottom: 50px;
+ }
+.beach:hover{
+    /* box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);  */
+    filter: drop-shadow(0px 10px 20px rgba(36, 36, 36, 0.5));  
+    cursor: pointer;
+}
+ 
+ .beach-img{
+    background-image: url("assets/beachCave.jpg");
+    background-size: cover;
+    width:750px;
+    height: 550px;
+    flex-shrink: 0;
+    background-position:bottom;
+
+    
+ }
+ .bech-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: fit-content;
+    width: 800px;
+ }
+ .beach-title{
+    color: #112A44;
+    /* color: #FFF; */
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 2px;
+ }
+
+ .city-name{
+    color: #857a7a;
+    /* color: #FFF; */
+    font-family: Outfit;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    width: fit-content;
+    
+
+ }
+ .beach-map{
+    width: 15%;
+    align-self: flex-end;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    
+ }
+
+ .beach-line{
+    margin-left: 50px;
+    width: 200px;
+    height: 1px;
+    background-color:#a8a1a1ad;
+ }
+.beach-destination{
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2px;
+    margin-right: 80px;
+    margin-bottom: 2px;
+}
+.car-icon{
+    width: 20px;
+    height: 15px;
+    background: url("assets/car-icon.png") no-repeat;
+    background-size: contain;
+    
+
+ } 
+ .beach-location{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 300px;
+    height: fit-content;
+    
+ }
+ .beach-route{
+    color: #857a7a;
+    /* color: #FFF; */
+    font-family: Outfit;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    width: fit-content;
+ }
+ .beach-description{
+    margin-left: 50px;
+    margin-top: 25px;
+    color: #535050;
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    padding: 20px;
+ }
+.beach-section-title{
+    align-self: flex-start;
+    color: #112A44;
+    font-family: Outfit;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+}
+ .beach-img2{
+    background-image: url("assets/djerba-beach.jpg");
+    background-size: cover;
+    width:750px;
+    height: 550px;
+    flex-shrink: 0;
+    
+ }
+ .beach-img3{
+    background-image: url("assets/korbous.jpg");
+    background-size: cover;
+    width:750px;
+    height: 550px;
+    flex-shrink: 0;
+    
+ }
+ .beach-img4{
+    background-image: url("assets/mahdia-beach.jpg");
+    background-size: cover;
+    width:750px;
+    height: 550px;
+    flex-shrink: 0;
+    
+ }
+
+ 
+
+ 
+ @media only screen and (min-width:768px) 
+{    
+    
+    #NavBar{
+        
+            margin: 0px;
+            width:100vw ;
+            height: 55px;
+            flex-shrink: 0;
+            /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
+            mix-blend-mode: color-burn;*/
+            background-color: #112A44; 
+
+            position: absolute; 
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* filter: blur(2px); */
+            z-index: 4;
+        
+    
+        }
+    
+
+    
+    #logo{
+
+        position: fixed;
+        width: 18vw;
+        height: 5vh;
+        flex-shrink: 0;
+        color: #FFF;
+        text-shadow: 0px 0px 20px rgb(21, 33, 82,0.7); 
+
+        font-family: Outfit;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height:68.75% ;
+        text-transform: uppercase;
+
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0px;
+        padding-top: 6px;
+        z-index: 4;
+        
+
+    }
+    
+    #Menu{
+        
+        /* position: fixed; */
+        position: absolute;
+        top: 0;
+        right:0;
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-top:0px;
+        z-index: 4;
+        width: 450px;
+        height: 50px;
+        padding-right: 20px;
+        text-transform: capitalize;
+
+
+    }
+    .menu-class{
+        display: block;
+        margin-top:12px;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27.5px; /* 110% */
+        text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.479);
+        /* height: 500px; */
+    }
+    .menu-class:hover{
+        text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.479);
+    }
+
+    .beach-img{
+        background-image: url("assets/beachCave.jpg");
+        background-size: cover;
+        width:750px;
+        height: 550px;
+        flex-shrink: 0;
+        background-position:bottom
+    
+        
+     }
+    
+    
+}
+@media only screen and (min-width:1000px) 
+    {   
+         .menu-class{
+       
+        font-size: 22px;
+      
+    }
+    body{
+        margin:0;
+        width: 100vw; 
+        background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
+        background-attachment: fixed;
+        overflow-x:hidden; 
+        height: auto;
+    
+    }
+    
+    #hero{
+    margin: 0;
+}
+    #logo{
+        width: 13vw;
+        height: auto;
+        margin:10px;
+
+
+    }
+    #Menu{
+            
+        top: 0;
+        right:0;
+        display: flex;
+        justify-content: space-around;
+        gap:50px;
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-top:0px;
+        z-index: 4;
+        width: fit-content;
+        height: 50px;
+        padding-right: 35px; 
+
+    }
+    .beach{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: rebeccapurple; */
+        background-color: #FFF;
+        /* width: fit-content; */
+        height: fit-content;
+        transition: filter 0.2s ease-in-out; 
+        /* transition: all 0.5s ease-in-out; */
+        box-shadow: 0px 0px 2px rgba(77, 74, 74, 0.582), 0px 0px 5px rgba(44, 42, 42, 0.582);
+        margin: 50px;
+        overflow: hidden;
+     }
+    .beach:hover{
+        /* box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.582), 0px 6px 20px rgba(0, 0, 0, 0.582);  */
+        filter: drop-shadow(0px 10px 20px rgba(36, 36, 36, 0.5));  
+        cursor: pointer;
+    }
+     
+     .beach-img{
+        background-image: url("assets/beachCave.jpg");
+        background-size: cover;
+        flex-shrink: 0;
+        height: auto;
+        
+        width:60%;
+        background-position:center;
+        
+     }
+     .bech-info{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        height: fit-content;
+        width: 40%;
+     }
+     .beach-title{
+        color: #112A44;
+        /* color: #FFF; */
+        font-family: Outfit;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-left: 20px;
+    
+        margin-top: 20px;
+        margin-bottom: 2px;
+     }
+    
+     .city-name{
+        color: #857a7a;
+        /* color: #FFF; */
+        font-family: Outfit;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-left: 20px;
+        width: fit-content;
+        
+    
+     }
+     .beach-map{
+        width: 15%;
+        align-self: flex-end;
+        margin-right: 80px;
+        margin-bottom: 20px;
+        
+     }
+    
+     .beach-line{
+        margin-left: 50px;
+        width: 200px;
+        height: 1px;
+        background-color:#a8a1a1ad;
+     }
+    .beach-destination{
+        display: flex;
+        gap: 10px; 
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 2px;
+        margin-right: 80px;
+        margin-bottom: 2px;
+    }
+    .car-icon{
+        width: 20px;
+        height: 15px;
+        background: url("assets/car-icon.png") no-repeat;
+        background-size: contain;
+        
+    
+     } 
+     .beach-location{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        width: 300px;
+        height: fit-content;
+        
+     }
+     .beach-route{
+        color: #857a7a;
+        /* color: #FFF; */
+        font-family: Outfit;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        width: fit-content;
+     }
+     .beach-description{
+        margin-left: 50px;
+        margin-top: 25px;
+        color: #535050;
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        padding: 20px;
+     }
+    .beach-section-title{
+        align-self: flex-start;
+        color: #112A44;
+        font-family: Outfit;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-left: 50px;
+        margin-bottom: 70px;
+    }
+     .beach-img2{
+        background-image: url("assets/djerba-beach.jpg");
+        background-size: cover;
+        
+        flex-shrink: 0;
+
+        height: auto;
+        
+        width:60%;
+        background-position:center;
+        
+     }
+     .beach-img3{
+        background-image: url("assets/korbous.jpg");
+        background-size: cover;
+       
+        flex-shrink: 0;
+        height: auto;
+        
+        width:60%;
+        background-position:center;
+        
+     }
+     .beach-img4{
+        background-image: url("assets/mahdia-beach.jpg");
+        background-size: cover;
+        
+        flex-shrink: 0;
+        height: auto;
+        
+        width:60%;
+        background-position:center;
+        
+     }
+
+}
+
+@media only screen and (min-width:1400px) {
+    body{
+        margin:0;
+        width: 100vw; 
+        background: linear-gradient(#2b5e9dce,rgba(255, 255, 255, 0.26) ); 
+        background-attachment: fixed;
+        overflow-x:hidden; 
+        height: auto;
+    
+
+    }
+    #Menu{
+            
+    
+        gap:50px;
+       
+        padding-right: 50px; 
+
+    }
+
+    #NavBar{
+        margin: 0px;
+        width:100% ;
+        height: 55px;
+        flex-shrink: 0;
+        /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
+        mix-blend-mode: color-burn;*/
+        background-color: #112A44; 
+    
+        /* position: absolute; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* filter: blur(2px); */
+        z-index: 4;
+       
+    
+    }
+   
+    a {
+        text-decoration: none;
+        display: none;
+    
+      }
+    #Menu{
+        
+        position: fixed;
+        top: 0;
+        right:0;
+        display: flex;
+        justify-content: space-around;
+        gap:20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top:0px;
+        z-index: 4;
+        width: 450px;
+    
+    }
+    .menu-class{
+
+        margin-top:12px;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27.5px; 
+        text-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.479);
+    
+    }
+    .menu-class:hover{
+        
+        text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.479);
+    }
+#beaches-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center; 
+    width: 100wh;
+    height: fit-content;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    /* background-color: red; */
+
+
+ }
+ /* .beach{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    width: 90%;
+    height: fit-content;
+    transition: filter 0.2s ease-in-out; 
+    box-shadow: 0px 0px 2px rgba(77, 74, 74, 0.582), 0px 0px 5px rgba(44, 42, 42, 0.582);
+    margin-bottom: 50px;
+ }
+.beach:hover{
+    filter: drop-shadow(0px 10px 20px rgba(36, 36, 36, 0.5));  
+    cursor: pointer;
+}
+ 
+ .beach-img{
+    background-image: url("assets/beachCave.jpg");
+    background-size: cover;
+    width:750px;
+    height: 550px;
+    flex-shrink: 0;
+    
+ }
+ .bech-info{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    height: fit-content;
+    width: 800px;
+ } */
+ .beach-title{
+    color: #112A44;
+    /* color: #FFF; */
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 2px;
+ }
+
+ .city-name{
+    color: #857a7a;
+    /* color: #FFF; */
+    font-family: Outfit;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    width: fit-content;
+    
+
+ }
+ .beach-map{
+    width: 15%;
+    align-self: flex-end;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    
+ }
+
+ .beach-line{
+    margin-left: 50px;
+    width: 200px;
+    height: 1px;
+    background-color:#a8a1a1ad;
+ }
+.beach-destination{
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2px;
+    margin-right: 80px;
+    margin-bottom: 2px;
+}
+.car-icon{
+    width: 20px;
+    height: 15px;
+    background: url("assets/car-icon.png") no-repeat;
+    background-size: contain;
+    
+
+ } 
+ .beach-location{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 300px;
+    height: fit-content;
+    
+ }
+ .beach-route{
+    color: #857a7a;
+    /* color: #FFF; */
+    font-family: Outfit;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    width: fit-content;
+ }
+ .beach-description{
+    margin-left: 50px;
+    margin-top: 25px;
+    color: #535050;
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    width: 350px;
+
+ }
+.beach-section-title{
+    align-self: flex-start;
+    color: #112A44;
+    font-family: Outfit;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+}
+ 
+}
+
+footer {
+    background-color: #112A44;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-section {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #2B5F9D;
+}
+
+.footer-section .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    display: flex; /* Ensure the socials div is displayed */
+}
+
+.footer-section .socials a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+    color: #2B5F9D;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #857a7a;
+}
+.listajdida{
+    background-color: white;
+}
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+    }
+}
+
+
+.footer-section .socials a i {
+    margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+.footer-section .socials a {
+    display: flex; /* Ensure the icon and text are aligned */
+    align-items: center; /* Vertically center the icon and text */
+}
+.footer-section {
+    padding: 12px;
+    color: #fff; /* Ensure text color is visible */
+}
+
+
+.footer-section ul li:hover {
+    color: #2B5F9D;
+    cursor: pointer; /* Show cursor pointer on hover */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 999px) {
+    .body-beach {
+        background-attachment: scroll;
+    }
+
+    #NavBar {
+        height: 45px;
+    }
+
+   
+
+    #Menu {
+        padding-right: 10px;
+    }
+
+    .menu-class {
+        font-size: 15px;
+    }
+
+    .beach {
+        flex-direction: column;
+    }
+
+    .beach-img, .beach-img2, .beach-img3, .beach-img4 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .bech-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .beach-title, .city-name, .beach-description, .beach-location, .beach-route {
+        margin-left: 10px;
+    }
+
+    .beach-map {
+        width: 17%;
+        margin-right: 10px;
+        align-self: center;
+    }
+
+    .beach-section-title {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .beach-destination {
+        margin-right: 10px;
+    }
+
+    .car-icon {
+        width: 15px;
+        height: 10px;
+    }
+}
+
+
+
+

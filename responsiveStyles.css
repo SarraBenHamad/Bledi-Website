@@ -86,7 +86,7 @@ body{
     flex-shrink: 0;
     /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
     mix-blend-mode: color-burn;*/
-    background-color: #112A44;
+    /* background-color: #112A44; */
 
     /* position: absolute; */
     position: fixed;
@@ -113,7 +113,7 @@ body{
     font-weight: 700;
     line-height:68.75% ;
     text-transform: uppercase;
-    /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); */
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); 
 
     /* position: absolute; */
     top: 0;
@@ -134,7 +134,7 @@ a {
   }
 #Menu{
     display: none;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right:0;
     display: flex;
@@ -520,6 +520,7 @@ a {
     }
     
     @media only screen and (max-width: 1023px) {
+        
         .slider-wrapper .slide-button {
           display: none !important;
         }
@@ -1380,9 +1381,9 @@ a {
             flex-shrink: 0;
             /* background: linear-gradient(90deg, #FFF 0.31%, #98B2C5 63.48%); 
             mix-blend-mode: color-burn;*/
-            background-color: #112A44;
-            /* position: absolute; */
-            position: fixed;
+            /* background-color: #112A44; */
+            position: absolute; 
+            /* position: fixed; */
             top: 0;
             left: 0;
             display: flex;
@@ -1430,7 +1431,7 @@ a {
         font-weight: 700;
         line-height:68.75% ;
         text-transform: uppercase;
-        /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.322); */
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); 
 
         /* position: absolute; */
         top: 0;
@@ -1459,7 +1460,8 @@ a {
     } 
     #Menu{
         
-        position: fixed;
+        /* position: fixed; */
+        position: absolute;
         top: 0;
         right:0;
         display: flex;
@@ -1602,7 +1604,11 @@ a {
     }
 }
 @media only screen and (min-width:1000px) 
-    {   
+    {    .menu-class{
+       
+        font-size: 22px;
+      
+    }
         #hero-title{
        
             font-size:6rem;
@@ -1685,19 +1691,18 @@ a {
     }
     #Menu{
             
-        position: fixed;
         top: 0;
         right:0;
         display: flex;
         justify-content: space-around;
-        gap:20px;
+        gap:50px;
         margin-right: 0px;
         margin-left: 10px;
         margin-top:0px;
         z-index: 4;
         width: fit-content;
         height: 50px;
-        padding-right: 55px; 
+        padding-right: 35px; 
 
     }
 
@@ -2216,6 +2221,14 @@ a {
     
 
     }
+    #Menu{
+            
+    
+        gap:50px;
+       
+        padding-right: 50px; 
+
+    }
     
     .sur2{
         width: 100vw;
@@ -2573,7 +2586,7 @@ footer {
     align-items: center; /* Vertically center the icon and text */
 }
 .footer-section {
-    padding: 20px;
+    padding: 12px;
     color: #fff; /* Ensure text color is visible */
 }
 
@@ -2582,3 +2595,6 @@ footer {
     color: #2B5F9D;
     cursor: pointer; /* Show cursor pointer on hover */
 }
+
+
+
